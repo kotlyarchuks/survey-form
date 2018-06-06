@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Survey Form</title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -16,13 +17,156 @@
     <form action="" id="survey-form">
       <div class="row">
         <div class="left-column">
-          <label for="name">* Name:</label>
-        </div><!--
-      --><div class="right-column">
+          <label for="name" id="name-label">* Name:</label>
+        </div>
+        <!--
+      -->
+        <div class="right-column">
           <input type="text" id="name" placeholder="Enter your name" required>
         </div>
       </div>
-    </form>
+      <div class="row">
+        <div class="left-column">
+          <label for="email" id="email-label">* Email:</label>
+        </div>
+        <!--
+      -->
+        <div class="right-column">
+          <input type="email" id="email" placeholder="Enter your Email" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="left-column">
+          <label for="number" id="number-label">* Age:</label>
+        </div>
+        <!--
+      -->
+        <div class="right-column">
+          <input type="number" id="number" placeholder="Age" min="18" max="90" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="left-column">
+          <label for="dropdown" id="dropdown-label">Which option best describes your current role?</label>
+        </div>
+        <!--
+      -->
+        <div class="right-column">
+          <select id="dropdown">
+            <option value="select" disabled>Select an option</option>
+            <option value="student" selected>Student</option>
+            <option value="full-time-job">Full Time Job</option>
+            <option value="full-time-learner">Full Time Learner</option>
+            <option value="prefer-not-to-say">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="left-column without-offset">
+          <label for="dropdown" id="dropdown-label">* How likely is that you would recommend freeCodeCamp to a friend?</label>
+        </div>
+        <!--
+      -->
+        <div class="right-column">
+          <div class="radio-row">
+            <input type="radio" name="recommend" id="definitely" value="definitely" checked>
+            <label for="definitely">Definitely</label>
+          </div>
+          <div class="radio-row">
+            <input type="radio" name="recommend" id="maybe" value="maybe">
+            <label for="maybe">Maybe</label>
+          </div>
+          <div class="radio-row">
+            <input type="radio" name="recommend" id="not-sure" value="not-sure">
+            <label for="not-sure">Not sure</label>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="left-column">
+          <label for="dropdown" id="dropdown-label">What do you like most in FCC:</label>
+        </div>
+        <!--
+        -->
+        <div class="right-column">
+          <select id="dropdown">
+            <option value="select" disabled selected>Select an option</option>
+            <option value="challenges">Challenges</option>
+            <option value="projects">Projects</option>
+            <option value="community">Community</option>
+            <option value="open-source">Open Source</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="left-column without-offset">
+          <label for="dropdown" id="dropdown-label">Things that should be improved in the future (Check all that apply):</label>
+        </div>
+        <!--
+        -->
+        <div class="right-column">
+          <div class="radio-row">
+            <input type="checkbox" name="improve" id="front-end" value="front-end">
+            <label for="front-end">Front-end Projects</label>
+          </div>
+          <div class="radio-row">
+            <input type="checkbox" name="improve" id="back-end" value="back-end">
+            <label for="back-end">Back-end Projects</label>
+          </div>
+          <div class="radio-row">
+            <input type="checkbox" name="improve" id="visual" value="visual">
+            <label for="visual">Data Visualization</label>
+          </div>
+          <div class="radio-row">
+            <input type="checkbox" name="improve" id="challenges" value="challenges">
+            <label for="challenges">Challenges</label>
+          </div>
+          <div class="radio-row">
+            <input type="checkbox" name="improve" id="community" value="community">
+            <label for="community">Open Source Community</label>
+          </div>
+          <div class="radio-row">
+            <input type="checkbox" name="improve" id="gitter" value="gitter">
+            <label for="gitter">Gitter help rooms</label>
+          </div>
+          <div class="radio-row">
+            <input type="checkbox" name="improve" id="videos" value="videos">
+            <label for="videos">Videos</label>
+          </div>
+          <div class="radio-row">
+            <input type="checkbox" name="improve" id="meetups" value="meetups">
+            <label for="meetups">City Meetups</label>
+          </div>
+          <div class="radio-row">
+            <input type="checkbox" name="improve" id="wiki" value="wiki">
+            <label for="wiki">Wiki</label>
+          </div>
+          <div class="radio-row">
+            <input type="checkbox" name="improve" id="forum" value="forum">
+            <label for="forum">Forum</label>
+          </div>
+          <div class="radio-row">
+            <input type="checkbox" name="improve" id="additional" value="additional">
+            <label for="additional">Additional Courses</label>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="left-column">
+          <label for="textarea" id="textarea-label">Any Comments or Suggestions?</label>
+        </div>
+        <!--
+        -->
+        <div class="right-column">
+          <textarea name="textarea" id="textarea" cols="35" rows="4" placeholder="Enter your comment here..."></textarea>
+        </div>
+      </div>
+      <button type="submit" id="submit">Submit</button>
+
+
+  </div>
+  </form>
   </div>
 </body>
 
