@@ -1,0 +1,19 @@
+body {
+  background-color: #A9D7D1;
+  text-align: center;
+  font-family: 'Raleway', Helvetica, sans-serif;
+}
+
+#title {
+  font-weight: bold;
+}
+
+#main {
+  width: 65%;
+  height: 1000px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px 30px 20px;
+}
+/*# sourceMappingURL=style.css.map */
